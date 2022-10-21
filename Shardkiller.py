@@ -167,6 +167,8 @@ def openMenu():
             continue
         elif ".git" in j:
             continue
+        elif ".md" in j:
+            continue
         else:
             print(str(indexOfCategory) + ". " + str(j))
             indexOfCategory+=1
