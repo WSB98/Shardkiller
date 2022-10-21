@@ -1,0 +1,4 @@
+ACCESS POINT OPERATION PROTOCOL - IZANAGIq116_mikoshi_shard
+Information regarding the location and technical specifications of Mikoshi infrastructure is classified TOP SECRET. Requests for access to this information will not be accepted.
+
+Active authorization level "Kisen" grants access to Access Point Izanagi within Arasaka Tower (Night City) after prior session registration and express permission for said session. The use of Access Point Izanagi via authorization level "Kisen" for research purposes additionally requires input of the grant or permit number issued by the acting head of Research Operations. All sessions will be recorded.

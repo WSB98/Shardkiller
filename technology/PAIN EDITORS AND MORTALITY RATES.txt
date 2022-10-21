@@ -1,0 +1,10 @@
+PAIN EDITORS AND MORTALITY RATES
+Introduction
+
+The implant known widely as the "pain editor" is cyberware that reduces or even entirely eliminates pain. It has enjoyed unwavering popularity for years among certain circles in Night City, the most devoted, and arguably most valuable, of which is mercenaries. It is using this test group that Zetatech conducted the following research.
+
+The pain editor is a neural coprocessor that inhibits the signals sent from nociceptors to the parietal lobe of the brain, thus preventing feelings of pain in the user. (Note: Some models also reduce symptoms of fatigue.) The beneficial effects caused by the pain editor are in some ways similar to the symptoms of hypoesthesia, including greater resistance to physical forms of torture and the ability to ignore pain from severe wounds which can allow the user to continue perform beyond normal human limitations for a brief period.
+
+However, some studies have reported that the pain editor can yield a range of undesirable side effects. For example, in the heat of battle, some users are unaware of the severity of their wounds, which causes them to continue fighting without realizing they are dying and require immediate medical attention. The statistics support the theory that a lack of negative reinforcement may cause users to continue fighting when the rational strategy would be to retreat and escape death. Since 2020, the mortality rate of pain editor owners is above 60 percent.
+
+In this report, I address the question of how to better protect Zetatech clients from avoidable death while using our pain editors[...]

@@ -1,0 +1,6 @@
+PUNCH CARDS: INSTRUCTIONS
+Each position on the card (punched/unpunched) corresponds to a unit of information, while each column represents one character or symbol
+When gently inserting the card into the reader, please remember to do the following:
+- Check for any damaged punched holes, which may corrupt the reading
+- Make sure cards are inserted in the proper order
+- Double-check that the card description matches the data encoded on it

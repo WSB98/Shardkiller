@@ -1,0 +1,3 @@
+SERC KAUKAZ GRODNO E-80q114_about_serc
+KAUKAZ GRODNO E-80
+Machine type SERC (Subterranean Extraction and Removal Combine) - tunnel boring drill. The model E-80 is designed to pierce through all kinds of substrates, including rocky and unstable substances (which occur on this construction project). The E-80 possesses a drill bit suited to the requirements of a Maglev tunnel. It features remote steering as well as manual control should unforeseen circumstances or lack of Net connection access occur.

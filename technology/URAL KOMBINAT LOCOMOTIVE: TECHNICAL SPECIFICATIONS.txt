@@ -1,0 +1,9 @@
+URAL KOMBINAT LOCOMOTIVE: TECHNICAL SPECIFICATIONS
+Cargo Locomotive
+Manufacturer: Ural Kombinat
+Model: AM-773
+Tare weight: 200 t
+Reactor count: 2
+Power: 12,550 kW
+Max speed: 70 mph
+Brake: OEXX-7b

@@ -1,0 +1,21 @@
+RELIC 2.0 PROTOTYPE SPECIFICATIONS
+TOP SECRET
+
+Clearance Level: P0
+Declassification Date: N/A
+Project Code: M-AH-76/-38272/SA
+Project Supervisor: Anders Hellman
+Approved By: Saburo Arasaka
+Project Name: RELIC 2.0
+Base Algorithm: "Soulkiller" v.2.311.8-B, RELIC 1.0 "Secure Your Soul"
+
+Preliminary Review
+
+Project Summary
+Unlike RELIC 1.0, the latest version of the biochip prototype is not only designed to store a digitized engram for basic communication, but also an enhanced personality construct capable of independent function and re-implantation into a new, organic host-body.
+RELIC 2.0's improved personality construct preserves the vast majority of the primary subject's cognitive and (virtualized) motor functions. Preliminary testing shows emotional output at 75% conformity levels (Note: We are only concerned with the construct's matrix coherence, not with its perceived authenticity), while volition fluctuates at 80-90% conformity.
+The success of the improved engram is largely owed to the use of experimental polyglycol structures as well as new synthetic granule neuron replicators within pseudomatrices (see Section 8764-03)
+A precondition of activating the RELIC 2.0 is the ceasing of the host's vital functions (brain death, cardiac arrest). Only complete and irreversible shutdown of neural activity can allow the engram to root itself and take over the body (i.e. reboot). Clinical trials using subjects on the verge of biological death have proven unsuccessful in activating the RELIC 2.0's basic functionality.
+In cases where subjects underwent biological death, upon taking root the biochip showed promising signs of initial activity prior to lapsing. Identifying the causes of failure despite fulfilling all technical requirements is the first step to achieving a breakthrough (i.e. complete activation of the RELIC 2.0's construct in a suitably prepared, organic host-body).
+
+Full target description: see Section 31B-02.

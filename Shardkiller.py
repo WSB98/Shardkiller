@@ -175,7 +175,7 @@ def openMenu():
     catChoice = input("\nchoose a category: ")
 
     #religion and philosophy
-    if(catChoice == "4"):
+    if(catChoice == "5"):
         print()
         currentPath = "religion_and_philosophy"
 
@@ -273,7 +273,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "2":
+    elif catChoice == "3":
         print()
         currentPath = "Poetry"
 
@@ -368,7 +368,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "3":
+    elif catChoice == "4":
         print()
         currentPath = "encrypted"
 
@@ -462,7 +462,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "5":
+    elif catChoice == "6":
         print()
         currentPath = "leaflets"
 
@@ -557,9 +557,104 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "1":
+    elif catChoice == "2":
         print()
         currentPath = "people_of_NC"
+
+        #print all shards in the folder
+        indexOfShard = 1
+        for x in os.listdir(currentPath):
+            if ".txt" in x:
+                print(str(indexOfShard) + ". " + str(x))
+            indexOfShard+=1
+        print()
+
+
+        #gather the choice and create filename based on choice
+        try:
+            relAndPhilChoice = input("choose a shard: ")
+            print()
+            fileName = currentPath + "/" + str(os.listdir(currentPath)[(int(relAndPhilChoice)-1)])
+        except:
+            print("-_- ... error occured")
+            time.sleep(1)
+            print("back to main menu")
+            time.sleep(1)
+            openMenu()
+
+        #now the file gets opened, then ask what command you want to run
+        #store the lines, title, and words as seperate variables
+        lines = openShard(fileName)
+        title = getTitle(lines)
+        words = getWords(lines)
+
+
+        #show commands, and run command
+        print("0. RAW PRINT")
+        print("1. get FIRST letter of each word")
+        print("2. get LAST letter of each word")
+        print("3. get MISSPELLED words")
+        print("4. get ALL [SIC]s")
+        
+        print()
+
+        relAndPhilCommand = input("choose a command: ")
+        print()
+
+        if relAndPhilCommand == "1":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print(getFirstLetters(words))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "2":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print(getLastLetters(words))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "3":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            wrongWords = getMisspelledWords(words)
+            for i in wrongWords:
+                print(str(i) + " -- possible correction: " + str(spell.correction(i)))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "4":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allSics = sicFinder(lines)
+            for i in allSics:
+                print(i)
+            print()
+            openMenu()
+        elif relAndPhilCommand == "0":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print()
+            for x in lines:
+                print(x)
+            openMenu()
+        else:
+            print("error -_- ...")
+            time.sleep(1)
+            print("going back to start, please enter a listed command")
+            time.sleep(1)
+            openMenu()
+    elif catChoice == "1":
+        print()
+        currentPath = "technology"
 
         #print all shards in the folder
         indexOfShard = 1
