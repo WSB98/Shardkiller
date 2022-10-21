@@ -6,6 +6,10 @@ as an effective tool in quickly accessing these data entries, and breaking them 
 
 Please keep in mind that there is no GUI for this program, and it is operated through a CLI.
 
+# Usage
+
+You do not need to understand Python to use this program; however, you will need Python installed on your machine. You can download [here](https://www.python.org/downloads/) if you do not. As previously stated, it is operated through a CLI with a basic menu navigated with numeric inputs. Bad inputs should not crash the program, if they do, please report it in the issues section. The intended behavior when a bad input is entered is to send the user back to the main menu.
+
 # Dependencies
 
 The only dependency within the program is [PySpellchecker](https://pypi.org/project/pyspellchecker/) which is used for finding misspelled words that are not
