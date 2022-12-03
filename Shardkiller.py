@@ -154,6 +154,34 @@ def sicFinder(lines):
 
     return sics
 
+#B@D finder
+def badFinder(words):
+    #set variable for b@d's found
+    bads = []
+    tracker = 0
+    #look through words to find when an @ symbol is mentioned
+    for x in words:
+        if "@" in x:
+            #if the @ symbol is the first word, get the 3 words after it, and store in array
+            if tracker == 0:
+                word1 = x
+                word2 = words[tracker+1]
+                word3 = words[tracker+2]
+                word4 = words[tracker+3]
+                appendState = str(word1+' '+word2+' '+word3+' '+word4+'...')
+                bads.append(appendState)
+            #if the @ symbol is mentioned anywhere else, get the word before and fter and store in the array
+            else:
+                word1 = words[tracker-1]
+                word2 = str(x)
+                word3 = words[tracker+1]
+                word4 = words[tracker+2]
+                appendState = str(word1+' '+word2+' '+word3+' '+word4+'...')
+                bads.append(appendState)
+        #iterate the tracker each time through the if loop
+        tracker+=1
+    return bads
+
 #mainloop menu for the user to select shards and command
 def openMenu():
     print("\n\n\n============ SHARDKILLER v1.0 ============\n")
@@ -177,7 +205,7 @@ def openMenu():
     catChoice = input("\nchoose a category: ")
 
     #religion and philosophy
-    if(catChoice == "5"):
+    if(catChoice == "6"):
         print()
         currentPath = "religion_and_philosophy"
 
@@ -218,6 +246,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -260,6 +289,16 @@ def openMenu():
                 print(i)
             print()
             openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
         elif relAndPhilCommand == "0":
             print("working...")
             time.sleep(1)
@@ -275,7 +314,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "3":
+    elif catChoice == "4":
         print()
         currentPath = "Poetry"
 
@@ -313,6 +352,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -355,6 +395,16 @@ def openMenu():
                 print(i)
             print()
             openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
         elif relAndPhilCommand == "0":
             print("working...")
             time.sleep(1)
@@ -370,7 +420,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "4":
+    elif catChoice == "5":
         print()
         currentPath = "encrypted"
 
@@ -407,6 +457,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -449,6 +500,16 @@ def openMenu():
                 print(i)
             print()
             openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
         elif relAndPhilCommand == "0":
             print("working...")
             time.sleep(1)
@@ -464,7 +525,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "6":
+    elif catChoice == "7":
         print()
         currentPath = "leaflets"
 
@@ -502,6 +563,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -544,6 +606,16 @@ def openMenu():
                 print(i)
             print()
             openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
         elif relAndPhilCommand == "0":
             print("working...")
             time.sleep(1)
@@ -559,7 +631,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "2":
+    elif catChoice == "3":
         print()
         currentPath = "people_of_NC"
 
@@ -597,6 +669,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -639,6 +712,16 @@ def openMenu():
                 print(i)
             print()
             openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
         elif relAndPhilCommand == "0":
             print("working...")
             time.sleep(1)
@@ -654,7 +737,7 @@ def openMenu():
             print("going back to start, please enter a listed command")
             time.sleep(1)
             openMenu()
-    elif catChoice == "1":
+    elif catChoice == "2":
         print()
         currentPath = "technology"
 
@@ -692,6 +775,7 @@ def openMenu():
         print("2. get LAST letter of each word")
         print("3. get MISSPELLED words")
         print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
         
         print()
 
@@ -731,6 +815,122 @@ def openMenu():
             time.sleep(1)
             allSics = sicFinder(lines)
             for i in allSics:
+                print(i)
+            print()
+            openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
+                print(i)
+            print()
+            openMenu()
+        elif relAndPhilCommand == "0":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print()
+            for x in lines:
+                print(x)
+            openMenu()
+        else:
+            print("error -_- ...")
+            time.sleep(1)
+            print("going back to start, please enter a listed command")
+            time.sleep(1)
+            openMenu()
+    elif catChoice == "1":
+        print()
+        currentPath = "literature"
+
+        #print all shards in the folder
+        indexOfShard = 1
+        for x in os.listdir(currentPath):
+            if ".txt" in x:
+                print(str(indexOfShard) + ". " + str(x))
+            indexOfShard+=1
+        print()
+
+
+        #gather the choice and create filename based on choice
+        try:
+            relAndPhilChoice = input("choose a shard: ")
+            print()
+            fileName = currentPath + "/" + str(os.listdir(currentPath)[(int(relAndPhilChoice)-1)])
+        except:
+            print("-_- ... error occured")
+            time.sleep(1)
+            print("back to main menu")
+            time.sleep(1)
+            openMenu()
+
+        #now the file gets opened, then ask what command you want to run
+        #store the lines, title, and words as seperate variables
+        lines = openShard(fileName)
+        title = getTitle(lines)
+        words = getWords(lines)
+
+
+        #show commands, and run command
+        print("0. RAW PRINT")
+        print("1. get FIRST letter of each word")
+        print("2. get LAST letter of each word")
+        print("3. get MISSPELLED words")
+        print("4. get ALL [SIC]s")
+        print("5. get ALL B@Ds")
+        
+        print()
+
+        relAndPhilCommand = input("choose a command: ")
+        print()
+
+        if relAndPhilCommand == "1":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print(getFirstLetters(words))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "2":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            print(getLastLetters(words))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "3":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            wrongWords = getMisspelledWords(words)
+            for i in wrongWords:
+                print(str(i) + " -- possible correction: " + str(spell.correction(i)))
+            print()
+            openMenu()
+        elif relAndPhilCommand == "4":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allSics = sicFinder(lines)
+            for i in allSics:
+                print(i)
+            print()
+            openMenu()
+        elif relAndPhilCommand == "5":
+            print("working...")
+            time.sleep(1)
+            print(title)
+            time.sleep(1)
+            allBads = badFinder(words)
+            for i in allBads:
                 print(i)
             print()
             openMenu()
