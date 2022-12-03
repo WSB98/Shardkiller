@@ -31,6 +31,9 @@ You will then paste it below the bottom-most **"elif catChoice ="** statment and
 you have added. Lastly, you will start the program and change each of the **"elif catChoice ="** statements to match the numbered list of categories shown in the output.
 Restart the program, and you should now be able to perform functions on text files in the new category.
 
+## shardkiller v2.0 update
+It is no longer necessary to go through this lengthy process. in **shardkiller2.py** you can simply add another **case** statement to the two Match clauses in the **openMenu** method. Shardkiller 2 is much more efficient and easy to follow, and eventually will replace the current Shardkiller.py file.
+
 
 # Licensing
 This program is open source and available to anyone whon wishes to fork the repo and improve on it.
