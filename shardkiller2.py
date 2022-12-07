@@ -16,6 +16,16 @@ def getTitle(lines):
     title = lines[0]
     return title
 
+
+#simple word extractor
+def getWordsSimple(lines):
+    wordArray = []
+    for x in lines:
+        word = x.split(' ')
+        wordArray.append(word)
+    
+    return wordArray
+
 #extracts all words from the txt and appends them in an array, splitting each sentence by spaces
 def getWords(lines):
     lineNumber = 0
@@ -219,10 +229,12 @@ def openMenu():
             case "5":
                 catName = "Poetry"
             case "6":
-                catName = "encrypted"
+                catName = "Notes"
             case "7":
-                catName = "religion_and_philosophy"
+                catName = "encrypted"
             case "8":
+                catName = "religion_and_philosophy"
+            case "9":
                 catName = "leaflets"
             case _:
                 time.sleep(1)
@@ -259,6 +271,7 @@ def openMenu():
     lines = openShard(fileName)
     title = getTitle(lines)
     words = getWords(lines)
+    simpleWords = getWordsSimple(lines)
 
 
     shardText = ""

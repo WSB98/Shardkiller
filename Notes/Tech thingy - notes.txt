@@ -1,0 +1,6 @@
+TECH THINGY - NOTES
+I forgot to change the notifications in the pressure gauge - add an automatic reset when starting it up
+
+Tracking module froze underwater again - probably the waterproof case is blocking the signal. Fix - make an opening for an antenna.
+
+Connection loss with the barometer when set at bathymetric mode. Fix - add an automatic signal to switch back to last position before connection loss
