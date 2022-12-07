@@ -215,14 +215,16 @@ def openMenu():
             case "3":
                 catName = "people_of_NC"
             case "4":
-                catName = "Poetry"
+                catName = "World"
             case "5":
-                catName = "encrypted"
+                catName = "Poetry"
             case "6":
-                catName = "religion_and_philosophy"
+                catName = "encrypted"
             case "7":
+                catName = "religion_and_philosophy"
+            case "8":
                 catName = "leaflets"
-            case other:
+            case _:
                 time.sleep(1)
                 print('not recognized')
                 time.sleep(1)
@@ -300,7 +302,7 @@ def openMenu():
         case "3":
             print(badFinder(words))
         case "4":
-            print(sicFinder(words))
+            print(sicFinder(lines))
         case _:
             time.sleep(1)
             print('\n\n not recognized')
